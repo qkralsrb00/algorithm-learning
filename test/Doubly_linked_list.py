@@ -85,10 +85,10 @@ def sudoku_solver(board):
             for d in range(1, 10):
                 b = (r//3)*3 + (c//3)
                 row = [
-                    9*r + c,         # cell constraint
-                    81 + 9*r + (d-1), # row constraint
-                    162 + 9*c + (d-1),# col constraint
-                    243 + 9*b + (d-1) # block constraint
+                    9*r + c,        
+                    81 + 9*r + (d-1), 
+                    162 + 9*c + (d-1),
+                    243 + 9*b + (d-1) 
                 ]
                 rows.append((r, c, d, add_row(columns, row)))
 
